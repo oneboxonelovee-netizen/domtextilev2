@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DomTextil - интернет магазин текстиля">
+  <title>Оффлайн режим - DomTextil</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #f4f7fc 0%, #eaf2ff 100%);
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #171f2e;
+    }
+
+    .offline-container {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .offline-card {
+      background: white;
+      border-radius: 1.1rem;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 24px 56px rgba(26, 40, 74, 0.24);
+    }
+
+    .offline-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .offline-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      color: #171f2e;
+    }
+
+    .offline-subtitle {
+      font-size: 0.9rem;
+      color: #67758e;
+      margin: 0 0 1rem;
+      line-height: 1.6;
+    }
+
+    .offline-info {
+      background: #f7faff;
+      border: 1px solid #dbe3f1;
+      border-radius: 0.7rem;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-size: 0.85rem;
+      color: #45608f;
+      line-height: 1.6;
+    }
+
+    .offline-info strong {
+      display: block;
+      color: #2f6fed;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .offline-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.85rem;
+      border: none;
+      border-radius: 0.7rem;
+      padding: 0 1.2rem;
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .button--primary {
+      background: #2f6fed;
+      color: white;
+    }
+
+    .button--primary:hover {
+      background: #225cd1;
+    }
+
+    .button--primary:active {
+      transform: scale(0.98);
+    }
+
+    .button--secondary {
+      background: transparent;
+      color: #2f6fed;
+      border: 1px solid #2f6fed;
+    }
+
+    .button--secondary:hover {
+      background: #e7f0ff;
+    }
+
+    .offline-tips {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #dbe3f1;
+      text-align: left;
+    }
+
+    .offline-tips-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #2f6fed;
+      margin: 0 0 0.75rem;
+    }
+
+    .offline-tips-list {
+      margin: 0;
+      padding-left: 1.2rem;
+      list-style: disc;
+    }
+
+    .offline-tips-list li {
+      margin: 0.4rem 0;
+      font-size: 0.8rem;
+      color: #67758e;
+      line-height: 1.5;
+    }
+
+    .back-to-app {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #8996ab;
+    }
+
+    .back-to-app a {
+      color: #2f6fed;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back-to-app a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animation */
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .offline-icon {
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .offline-card {
+        padding: 2rem 1.2rem;
+      }
+
+      .offline-title {
+        font-size: 1.3rem;
+      }
+
+      .offline-icon {
+        font-size: 3rem;
+      }
+
+      .offline-actions {
+        gap: 0.6rem;
+      }
+
+      .button {
+        min-height: 2.6rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="offline-card">
+      <span class="offline-icon">📶</span>
+
+      <h1 class="offline-title">Нет подключения</h1>
+
+      <p class="offline-subtitle">
+        К сожалению, вы находитесь в оффлайн режиме и не можете загрузить новые данные.
+      </p>
+
+      <div class="offline-info">
+        <strong>Но не волнуйтесь!</strong>
+        Ваша корзина и кэшированные товары сохранены и доступны в оффлайн режиме.
+      </div>
+
+      <div class="offline-actions">
+        <button class="button button--primary" onclick="tryReload()">
+          Попробовать заново
+        </button>
+        <button class="button button--secondary" onclick="goHome()">
+          На главную страницу
+        </button>
+      </div>
+
+      <div class="offline-tips">
+        <div class="offline-tips-title">Рекомендации:</div>
+        <ul class="offline-tips-list">
+          <li>Проверьте подключение к интернету</li>
+          <li>Убедитесь, что Wi-Fi или мобильная сеть включены</li>
+          <li>Попробуйте перезагрузить маршрутизатор</li>
+          <li>Если проблема сохраняется, обратитесь в поддержку</li>
+        </ul>
+      </div>
+
+      <div class="back-to-app">
+        Статус: <strong>оффлайн режим</strong> — используется кэшированное содержимое
+        <br>
+        <a href="javascript:location.reload()">↻ Обновить страницу</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function tryReload() {
+      // Проверяем наличие интернета
+      fetch('/', { method: 'HEAD', cache: 'no-store' })
+        .then(() => {
+          location.reload();
+        })
+        .catch(() => {
+          alert('Интернет все еще недоступен. Пожалуйста, проверьте подключение.');
+        });
+    }
+
+    function goHome() {
+      window.location.href = '/';
+    }
+
+    // Автоматически проверяем подключение каждые 5 секунд
+    setInterval(() => {
+      navigator.onLine && location.reload();
+    }, 5000);
+  </script>
+</body>
+</html>

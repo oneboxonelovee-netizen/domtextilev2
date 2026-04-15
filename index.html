@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дом Текстиль Таганрог — Качественный текстиль по премиальным ценам</title>
+  <meta name="description" content="Дом Текстиль Таганрог — качественное постельное бельё, полотенца и текстиль для дома. Премиальное качество, стиль и комфорт. Быстрая доставка по всей России.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="https://89896165819.do.am/android-chrome-512x512.png">
+  <meta property="og:title" content="Дом Текстиль Таганрог — Премиальный текстиль для дома">
+  <meta property="og:description" content="Качественный текстиль для дома: постельное бельё, полотенца и аксессуары. Выгодные цены и быстрая доставка.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xn--d1acjhgcn1agd6i.xn--p1ai/catalog/">
+  <meta property="og:image" content="https://89896165819.do.am/material/og-catalog-dom-textil.png">
+  <link rel="canonical" href="https://xn--d1acjhgcn1agd6i.xn--p1ai/catalog/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <div class="header-wrapper">
+    <header class="app-header">
+      <div class="container app-header__inner">
+        <a class="logo" href="#">
+          <img class="logo__image" src="https://89896165819.do.am/android-chrome-512x512.png" alt="Дом Текстиль">
+          <span>Дом Текстиль</span>
+        </a>
+        <div class="worktime" aria-label="График работы">
+          <p class="worktime__status" data-work-status>Сейчас закрыты</p>
+          <details class="worktime__details" data-work-details>
+            <summary>График</summary>
+            <div class="worktime__panel">
+              <button class="worktime__close" type="button" aria-label="Закрыть график" data-work-close>×</button>
+              <ul class="worktime__list">
+                <li data-work-day="mon"><span>Понедельник</span><strong>Выходной</strong></li>
+                <li data-work-day="tue"><span>Вторник</span><strong>10:00-19:00</strong></li>
+                <li data-work-day="wed"><span>Среда</span><strong>10:00-19:00</strong></li>
+                <li data-work-day="thu"><span>Четверг</span><strong>10:00-19:00</strong></li>
+                <li data-work-day="fri"><span>Пятница</span><strong>10:00-19:00</strong></li>
+                <li data-work-day="sat"><span>Суббота</span><strong>10:00-18:00</strong></li>
+                <li data-work-day="sun"><span>Воскресенье</span><strong>10:00-18:00</strong></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+        <a class="header-action" href="#cart-modal">Корзина</a>
+      </div>
+    </header>
+
+    <section class="search-panel" aria-label="Поиск и фильтры">
+      <div class="container">
+        <div class="search-field">
+          <a class="search-button search-button--left" href="#sort-modal">Сортировка</a>
+          <input type="search" placeholder="Поиск по каталогу" aria-label="Поиск по каталогу">
+          <a class="search-button search-button--right" href="#filters-modal">Фильтры</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main class="app-main container">
+
+    <section class="catalog" aria-label="Каталог товаров">
+      <h1 class="visually-hidden">Каталог</h1>
+
+      <div class="catalog-grid"></div>
+      <div class="catalog-empty" hidden>🔎 Ничего не найдено,<br>попробуйте изменить запрос</div>
+    </section>
+  </main>
+
+  <a class="scroll-top" href="#top" aria-label="В начало каталога">↑</a>
+
+  <nav class="bottom-nav" aria-label="Мобильная навигация">
+    <button class="bottom-nav__item bottom-nav__item--active" type="button" data-bottom-nav="catalog">
+      <span class="bottom-nav__icon bottom-nav__icon--catalog" aria-hidden="true"></span>
+      <span class="bottom-nav__text">Главная</span>
+    </button>
+    <button class="bottom-nav__item" type="button" data-bottom-nav="cart">
+      <span class="bottom-nav__icon bottom-nav__icon--cart" aria-hidden="true">
+        <span class="bottom-nav__count" hidden>0</span>
+      </span>
+      <span class="bottom-nav__text">Корзина</span>
+    </button>
+    <button class="bottom-nav__item" type="button" data-bottom-nav="contact">
+      <span class="bottom-nav__icon bottom-nav__icon--contact" aria-hidden="true"></span>
+      <span class="bottom-nav__text">Связаться</span>
+    </button>
+    <button class="bottom-nav__item" type="button" data-bottom-nav="order">
+      <span class="bottom-nav__icon bottom-nav__icon--order" aria-hidden="true"></span>
+      <span class="bottom-nav__text">Заказать</span>
+    </button>
+    <button class="bottom-nav__item" type="button" data-bottom-nav="about">
+      <span class="bottom-nav__icon bottom-nav__icon--about" aria-hidden="true"></span>
+      <span class="bottom-nav__text">О нас</span>
+    </button>
+  </nav>
+
+  <section class="modal" id="product-modal" aria-label="Карточка товара">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--product">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+
+      <div class="product-modal">
+        <div class="product-modal__hero-wrap">
+          <img class="product-modal__hero" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23edf1eb'/%3E%3C/svg%3E" alt="Фото товара">
+        </div>
+
+        <div class="product-modal__gallery" aria-label="Галерея товара"></div>
+
+        <div class="product-modal__content">
+          <h2 class="product-modal__name">Товар</h2>
+          <div class="product-modal__price-row">
+            <span class="product-card__price">—</span>
+            <span class="product-card__old-price"></span>
+          </div>
+          <div class="product-modal__badges" aria-label="Статусы товара"></div>
+          <p class="product-modal__description">
+            Описание товара загружается из API.
+          </p>
+
+          <div class="option-group">
+            <p class="option-group__label">Размер</p>
+            <div class="chip-row"></div>
+          </div>
+
+          <div class="product-modal__actions">
+            <button class="button button--primary button--full" type="button">В корзину</button>
+            <button class="button button--ghost product-modal__copy-link" type="button" data-action="copy-product-link">Скопировать ссылку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="cart-modal" aria-label="Корзина">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--cart">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+
+      <div class="cart-modal">
+        <h2 class="modal__title">Корзина</h2>
+
+        <ul class="cart-list"></ul>
+        <div class="cart-empty-state" hidden>Корзина пуста</div>
+
+                <button class="button button--primary button--full checkout-open-button" type="button">Отправить заявку</button>
+
+        <form class="checkout-form" action="#" hidden>
+          <label class="field">
+            Имя
+            <input type="text" name="name" placeholder="Введите имя" required>
+          </label>
+          <label class="field">
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 999-123-45-67" inputmode="tel" autocomplete="tel" required>
+          </label>
+          <label class="field">
+            Способ связи
+            <select name="contacts" required>
+              <option value="" selected disabled>Выберите способ связи</option>
+              <option value="Telegram">Telegram</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Max">Max</option>
+              <option value="Позвонить по телефону">Позвонить по телефону</option>
+            </select>
+          </label>
+          <label class="field">
+            Город
+            <input type="text" name="city" placeholder="Введите город" required>
+          </label>
+          <label class="field">
+            Способ доставки
+            <select name="delivery" required>
+              <option value="" selected disabled>Выберите доставку</option>
+              <option value="OZON">OZON</option>
+              <option value="Яндекс">Яндекс</option>
+              <option value="5Post">5Post</option>
+              <option value="СДЭК">СДЭК</option>
+            </select>
+          </label>
+          <label class="field field--consent">
+            <span class="field-consent">
+              <input type="checkbox" name="consent" value="1" required>
+              <span>
+                Я прочитал(а)
+                <a href="https://xn--d1acjhgcn1agd6i.xn--p1ai/policy/" target="_blank" rel="noopener noreferrer">Политику конфиденциальности</a>
+                и
+                <a href="https://xn--d1acjhgcn1agd6i.xn--p1ai/privacy/" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
+              </span>
+            </span>
+          </label>
+          <button class="button button--primary button--full" type="submit">Отправить</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="cart-empty-modal" aria-label="Пустая корзина">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--empty">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+      <div class="empty-state">
+        <p>Корзина пуста</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--fullscreen" id="filters-modal" aria-label="Фильтры">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--fullscreen">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+
+      <div class="filters-modal">
+        <div class="filters-modal__scroll">
+          <h2 class="filters-modal__title">Фильтры</h2>
+
+          <section class="filter-group">
+            <h3>Категории</h3>
+          </section>
+
+          <section class="filter-group">
+            <h3>Размеры</h3>
+            <div class="size-grid filters-size-grid"></div>
+          </section>
+
+          <section class="filter-group">
+            <h3>Тип</h3>
+            <div class="size-grid filters-type-grid"></div>
+          </section>
+
+          <section class="filter-group">
+            <h3>Цена</h3>
+            <div class="price-grid">
+              <input type="number" placeholder="От">
+              <input type="number" placeholder="До">
+            </div>
+          </section>
+        </div>
+
+        <div class="filters-modal__actions">
+          <a class="button button--primary button--full" href="#">Применить</a>
+          <a class="button button--ghost button--full" href="#">Сбросить</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="sort-modal" aria-label="Сортировка">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--sheet">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+
+      <div class="sort-modal">
+        <h2 class="modal__title">Сортировка</h2>
+        <label class="sort-option">
+          <input type="radio" name="sort" checked>
+          По популярности
+        </label>
+        <label class="sort-option">
+          <input type="radio" name="sort">
+          Сначала дешевле
+        </label>
+        <label class="sort-option">
+          <input type="radio" name="sort">
+          Сначала дороже
+        </label>
+        <a class="button button--primary button--full" href="#">Применить</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="success-modal" aria-label="Заявка отправлена">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--empty">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+      <div class="success-state">
+        <div class="success-state__check" aria-hidden="true">
+          <svg viewBox="0 0 52 52">
+            <circle class="success-state__check-circle" cx="26" cy="26" r="24"></circle>
+            <path class="success-state__check-mark" d="M14 27.5l8.2 8.2L38.5 19.4"></path>
+          </svg>
+        </div>
+        <h2 class="success-state__title">Заявка отправлена</h2>
+        <p class="success-state__text">В ближайшее время мы свяжемся с вами.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="contact-modal" aria-label="Связаться">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--sheet">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+      <div class="info-modal">
+        <h2 class="modal__title">Связаться</h2>
+        <a class="info-modal__link info-modal__link--call" href="tel:+79896168700">Позвонить в магазин</a>
+        <a class="info-modal__link info-modal__link--with-icon" href="https://t.me/svetlana_postelnoe" target="_blank" rel="noopener noreferrer">
+          <svg class="info-modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true">
+            <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+            <path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1 c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z"></path>
+            <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z"></path>
+            <path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1 C30,18.7,30.1,18.4,29.9,18.2z"></path>
+          </svg>
+          <span>Telegram Светлана</span>
+        </a>
+        <a class="info-modal__link info-modal__link--with-icon" href="https://t.me/NektoAladin" target="_blank" rel="noopener noreferrer">
+          <svg class="info-modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true">
+            <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+            <path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1 c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z"></path>
+            <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z"></path>
+            <path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1 C30,18.7,30.1,18.4,29.9,18.2z"></path>
+          </svg>
+          <span>Telegram Никита</span>
+        </a>
+        <div class="info-modal__chips">
+          <a class="info-chip" href="https://max.ru/join/33zEk9LD90sNWfPBJE-X_28kSYMmFiYO8mc4QRV_J0k" target="_blank" rel="noopener noreferrer">
+            <img src="https://maxicons.ru/icons/MAX.svg" alt="MAX" width="18" height="18">
+            <span>Группа в MAX</span>
+          </a>
+          <a class="info-chip" href="https://t.me/dom_textile_tgn" target="_blank" rel="noopener noreferrer">
+            <svg class="info-chip__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+              <path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1 c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z"></path>
+              <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z"></path>
+              <path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1 C30,18.7,30.1,18.4,29.9,18.2z"></path>
+            </svg>
+            <span>Группа в Telegram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="order-modal" aria-label="Как заказать">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--sheet">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+      <div class="info-modal order-guide">
+        <h2 class="modal__title">Как заказать?</h2>
+        <ol class="order-guide__list">
+          <li>Выберите товар в каталоге.</li>
+          <li>Добавьте товар в корзину.</li>
+          <li>Перейдите в корзину и нажмите «Отправить заявку».</li>
+          <li>Заполните форму: имя, номер телефона, город доставки и способ связи.</li>
+          <li>Нажмите «Отправить».</li>
+        </ol>
+        <p class="order-guide__note">По любым вопросам обращайтесь:</p>
+        <div class="order-guide__chips">
+          <a class="info-chip" href="https://t.me/NektoAladin" target="_blank" rel="noopener noreferrer">
+            <svg class="info-chip__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+              <path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1 c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z"></path>
+              <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z"></path>
+              <path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1 C30,18.7,30.1,18.4,29.9,18.2z"></path>
+            </svg>
+            <span>Telegram Никита</span>
+          </a>
+          <a class="info-chip" href="https://t.me/svetlana_postelnoe" target="_blank" rel="noopener noreferrer">
+            <svg class="info-chip__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+              <path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1 c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z"></path>
+              <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z"></path>
+              <path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1 C30,18.7,30.1,18.4,29.9,18.2z"></path>
+            </svg>
+            <span>Telegram Светлана</span>
+          </a>
+        </div>
+        <a class="info-modal__link info-modal__link--call order-guide__call" href="tel:+79896165819">Позвонить в магазин</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="about-modal" aria-label="О нас">
+    <a class="modal__backdrop" href="#" aria-label="Закрыть модальное окно"></a>
+    <div class="modal__dialog modal__dialog--sheet">
+      <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+      <div class="info-modal about-info">
+        <h2 class="modal__title">О нас</h2>
+        <p class="info-modal__text">
+          Дом Текстиль — онлайн-магазин с физическим магазином в Таганроге: ул. 4-я Линия, 2Б. Отправляем заказы по всей России.
+        </p>
+        <div class="info-modal__chips about-policy-chips" aria-label="Правовая информация">
+          <a class="info-chip" href="https://xn--d1acjhgcn1agd6i.xn--p1ai/policy/" target="_blank" rel="noopener noreferrer">
+            Политика конфиденциальности
+          </a>
+          <a class="info-chip" href="https://xn--d1acjhgcn1agd6i.xn--p1ai/privacy/" target="_blank" rel="noopener noreferrer">
+            Согласие на обработку данных
+          </a>
+        </div>
+        <div class="about-faq">
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Кто производитель?</h3>
+            <p class="about-faq__text">Фабричный Китай. Работаем только с проверенными брендами с высоким качеством.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Какое качество текстиля?</h3>
+            <p class="about-faq__text">В ассортименте есть и бюджетные модели, и премиум-сегмент.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Как происходит оплата?</h3>
+            <p class="about-faq__text">Оплата переводом при оформлении заказа, по полной предоплате.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Способы оплаты</h3>
+            <p class="about-faq__text">СБП по номеру телефона или перевод на карту.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Как проходит доставка?</h3>
+            <p class="about-faq__text">Передаем отправление в день оплаты или на следующий день, отправляем трек-номер. Получение — в выбранном пункте выдачи с паспортом.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Чем отправляем?</h3>
+            <p class="about-faq__text">СДЭК и Почта России (без ограничений по весу и объему), Яндекс Маркет (с ограничениями по габаритам), 5Post и Ozon доставка.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Сроки доставки</h3>
+            <p class="about-faq__text">Рассчитываются индивидуально. По СДЭК ориентировочно: Ростовская область — 1–2 дня, Краснодарский край — 3–4 дня, Москва и МО — 3–5 дней.</p>
+          </article>
+          <article class="about-faq__item">
+            <h3 class="about-faq__title">Стоимость доставки</h3>
+            <p class="about-faq__text">Рассчитывается индивидуально для каждого заказа.</p>
+          </article>
+        </div>
+        <div class="about-map" aria-label="Карта магазина">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae7906907212c779178f68a6f3ff5b8ce88c31952b5867f761e1add205220d36d&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <a class="info-modal__link info-modal__link--call about-route-link" href="https://yandex.com/maps/org/dom_tekstil/222435062278/?ll=38.918486%2C47.274121&z=15" target="_blank" rel="noopener noreferrer">
+          Построить маршрут
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-viewer" id="image-viewer" aria-label="Полноэкранный просмотр фото" aria-hidden="true">
+    <button class="image-viewer__backdrop" type="button" data-image-viewer-close aria-label="Закрыть просмотр"></button>
+    <div class="image-viewer__dialog" role="dialog" aria-modal="true">
+      <button class="image-viewer__close" type="button" data-image-viewer-close aria-label="Закрыть">×</button>
+      <button class="image-viewer__nav image-viewer__nav--prev" type="button" data-image-viewer-prev aria-label="Предыдущее фото">‹</button>
+      <img class="image-viewer__image" src="" alt="Фото товара">
+      <button class="image-viewer__nav image-viewer__nav--next" type="button" data-image-viewer-next aria-label="Следующее фото">›</button>
+      <p class="image-viewer__counter" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

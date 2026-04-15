@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница не найдена | Дом Текстиль</title>
+  <meta name="description" content="Страница не найдена. Вернитесь в каталог Дом Текстиль.">
+  <meta name="theme-color" content="#2f6fed">
+  <link rel="manifest" href="/material/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/js/config.js"></script>
+</head>
+<body class="notfound-page" id="top">
+  <div class="header-wrapper">
+    <header class="app-header">
+      <div class="container app-header__inner">
+        <a class="logo" href="/">
+          <img class="logo__image" src="/assets/logo.png" alt="Дом Текстиль" width="32" height="32">
+          <span>Дом Текстиль</span>
+        </a>
+        <a class="button button--ghost" href="/">На главную</a>
+      </div>
+    </header>
+  </div>
+
+  <main class="app-main container notfound-main">
+    <section class="notfound-card" aria-label="Страница не найдена">
+      <p class="notfound-code">404</p>
+      <h1 class="notfound-title">Страница не найдена</h1>
+      <p class="notfound-text">Возможно, ссылка устарела или страница была перемещена.</p>
+      <div class="notfound-actions">
+        <a class="button button--primary" href="/">Перейти в каталог</a>
+        <a class="button button--ghost" href="/">На главную</a>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .notfound-code {
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0;
+      line-height: 1;
+    }
+
+    .notfound-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .notfound-text {
+      color: var(--muted);
+      margin: 0 0 2rem;
+      font-size: 1.1rem;
+    }
+
+    .notfound-card {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .notfound-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .notfound-code {
+        font-size: 3rem;
+      }
+
+      .notfound-title {
+        font-size: 1.5rem;
+      }
+
+      .notfound-card {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</body>
+</html>

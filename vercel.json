@@ -1,0 +1,48 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "",
+  "installCommand": "",
+  "env": {
+    "VITE_REACT_APP_PRODUCTS_API_URL": "@products_api_url",
+    "VITE_REACT_APP_ORDER_API_URL": "@order_api_url",
+    "VITE_REACT_APP_HOME_PAGE_URL": "@home_page_url"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(?!.*\\..*)",
+      "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=0, no-cache, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
