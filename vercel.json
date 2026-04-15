@@ -3,9 +3,9 @@
   "outputDirectory": "",
   "installCommand": "",
   "env": {
-    "VITE_REACT_APP_PRODUCTS_API_URL": "@products_api_url",
-    "VITE_REACT_APP_ORDER_API_URL": "@order_api_url",
-    "VITE_REACT_APP_HOME_PAGE_URL": "@home_page_url"
+    "VITE_REACT_APP_PRODUCTS_API_URL": "https://script.google.com/macros/d/AKfycbzMSoX3FDh78yGA1u196ineFWTlKfCHIDEj0lDePtQ7NHyfhe98GWPdpjrqjEzgU5g/usercache",
+    "VITE_REACT_APP_ORDER_API_URL": "https://script.google.com/macros/d/AKfycbzMSoX3FDh78yGA1u196ineFWTlKfCHIDEj0lDePtQ7NHyfhe98GWPdpjrqjEzgU5g/usercache",
+    "VITE_REACT_APP_HOME_PAGE_URL": "https://domtextilev2.vercel.app"
   },
   "routes": [
     {
